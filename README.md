@@ -1,5 +1,5 @@
 # ios-swinject-storyboard-demo
-画面遷移時にパラメタを渡す
+DIコンテナを使って、画面遷移時にパラメタを渡す
 
 ## 実装手順
 ### 1. PodFile
@@ -24,10 +24,12 @@ import SwinjectStoryboard
 ### 4. AnimalViewControllerとCatオブジェクト(Animalプロトコル)を関連付ける
 
 ```
-        container.storyboardInitCompleted(AnimalViewController.self) { r, c in
+container.register(Animal.self) { _ in Cat(name: "Mer") }
+
+container.storyboardInitCompleted(AnimalViewController.self) { r, c in
             c.animal = r.resolve(Animal.self)
         }
-        container.register(Animal.self) { _ in Cat(name: "Mer") }
+        
 ```        
     
 ### 5. Storyboardを呼び出す
