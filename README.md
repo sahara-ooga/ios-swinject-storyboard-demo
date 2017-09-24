@@ -51,7 +51,7 @@ container.storyboardInitCompleted(AnimalViewController.self) { r, c in
 <br>何かしらに依存しているオブジェクトの型
 
 ## 参考
-https://github.com/Swinject/Swinject/blob/master/README.md
-http://dev.classmethod.jp/smartphone/swinject-dependency-injection/
-https://news.realm.io/jp/news/tryswift-veronica-ray-real-world-mocking-swift/
-[The Difference Between Mocks and Stubs](https://www.martinfowler.com/articles/mocksArentStubs.html#TheDifferenceBetweenMocksAndStubs)
+- https://github.com/Swinject/Swinject/blob/master/README.md
+- [[Swift] Swinjectを使ったDependency Injection](http://dev.classmethod.jp/smartphone/swinject-dependency-injection/)
+- https://news.realm.io/jp/news/tryswift-veronica-ray-real-world-mocking-swift/
+- [The Difference Between Mocks and Stubs](https://www.martinfowler.com/articles/mocksArentStubs.html#TheDifferenceBetweenMocksAndStubs)
